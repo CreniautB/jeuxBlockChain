@@ -1,0 +1,106 @@
+@import "../../colors.scss";
+
+.exitModal {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+  img {
+    width: 2vw;
+  }
+}
+
+.modal {
+  min-width: 55vw;
+  min-height: 55vh;
+  position: absolute;
+  background-color: $lightBlue;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2vw 4vw;
+  border-radius: 20px;
+  box-shadow: -0.3vw 0.2vw 0px 0.1vw $darkBLue;
+  z-index: 20;
+}
+.paragrapheScroll {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  max-height: 40vh;
+}
+.titleModalCenter {
+  text-align: center;
+}
+.paragrapheScroll::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+  background-color: #2f4c54; /* or add it to the track */
+  color: #2f4c54;
+  border-radius: 10px;
+}
+.paragrapheScroll::-webkit-scrollbar-thumb {
+  background: #162830;
+  height: 1px;
+  border-radius: 10px;
+}
+.modalFactoryContainer {
+  .modalFactoryHeader {
+    display: flex;
+    justify-content: space-around;
+  }
+  h3 {
+    font-weight: 500;
+    font-size: 1.5vw;
+  }
+}
+
+.modalButtonDark {
+  background-color: $green;
+  box-shadow: -0.3vw 0.2vw 0px 0.1vw $darkBLue;
+}
+.modalButtonLight {
+  background-color: $lightGreen;
+  box-shadow: -0.3vw 0.2vw 0px 0.1vw $green;
+}
+
+.pictogramContainerModalBuy {
+  display: flex;
+  justify-content: space-between;
+  margin: 2vw auto;
+  width: 80%;
+
+  .pictogramModalBuy {
+    padding: 1em;
+    border: 3px solid $lightBlue;
+    cursor: pointer;
+    &:hover {
+      border: 3px solid white;
+      border-radius: 15px;
+    }
+    img {
+      width: 5vw;
+    }
+    .descBuyPictogram {
+      div {
+        text-align: center;
+        font-size: 1.1vw;
+      }
+    }
+  }
+}
+
+.btnCenterContainer {
+  text-align: center;
+}
+.continentChooseModalBuy {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2vh;
+  h3 {
+    margin-right: 25%;
+  }
+  .modalButtonLight {
+    text-transform: capitalize;
+  }
+}

@@ -1,0 +1,90 @@
+@font-face {
+  font-family: goodTime;
+  src: url("../../assets/font/fontGood.otf") format("opentype");
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+p,
+h1,
+h2,
+h3 {
+  color: #1b2e33;
+}
+
+button {
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+  border: none;
+  font-weight: 600;
+  font-size: 1.2vw;
+  cursor: pointer;
+}
+
+.btnDarkBlue {
+  background-color: #55828b;
+  -webkit-box-shadow: -0.3vw 0.2vw 0px 0.1vw #364958;
+          box-shadow: -0.3vw 0.2vw 0px 0.1vw #364958;
+  font-weight: 500;
+  font-size: 3vh;
+}
+
+.logoutContainer {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 3%;
+  right: 3%;
+}
+
+.logoutContainer button {
+  margin-left: 3vh;
+}
+
+.buyBtn {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+}
+
+.assocBtn {
+  position: absolute;
+  top: 90%;
+  right: 3%;
+}
+
+.ruleBtn {
+  position: absolute;
+  top: 90%;
+  left: 3%;
+}
+
+.mainTitle {
+  text-align: center;
+}
+
+.mainTitle * {
+  margin: 0;
+}
+
+.mainTitle h1 {
+  font-family: goodTime !important;
+}
+
+.titleBottom {
+  position: absolute;
+  text-align: center;
+  bottom: 3%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.titleBottom p {
+  margin: auto;
+  font-weight: 500;
+}
+/*# sourceMappingURL=game.css.map */

@@ -1,0 +1,133 @@
+.exitModal {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.exitModal img {
+  width: 2vw;
+}
+
+.modal {
+  min-width: 55vw;
+  min-height: 55vh;
+  position: absolute;
+  background-color: #55828b;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 2vw 4vw;
+  border-radius: 20px;
+  -webkit-box-shadow: -0.3vw 0.2vw 0px 0.1vw #364958;
+          box-shadow: -0.3vw 0.2vw 0px 0.1vw #364958;
+  z-index: 20;
+}
+
+.paragrapheScroll {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  max-height: 40vh;
+}
+
+.titleModalCenter {
+  text-align: center;
+}
+
+.paragrapheScroll::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+  background-color: #2f4c54;
+  /* or add it to the track */
+  color: #2f4c54;
+  border-radius: 10px;
+}
+
+.paragrapheScroll::-webkit-scrollbar-thumb {
+  background: #162830;
+  height: 1px;
+  border-radius: 10px;
+}
+
+.modalFactoryContainer .modalFactoryHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.modalFactoryContainer h3 {
+  font-weight: 500;
+  font-size: 1.5vw;
+}
+
+.modalButtonDark {
+  background-color: #87bba2;
+  -webkit-box-shadow: -0.3vw 0.2vw 0px 0.1vw #364958;
+          box-shadow: -0.3vw 0.2vw 0px 0.1vw #364958;
+}
+
+.modalButtonLight {
+  background-color: #c9e4ca;
+  -webkit-box-shadow: -0.3vw 0.2vw 0px 0.1vw #87bba2;
+          box-shadow: -0.3vw 0.2vw 0px 0.1vw #87bba2;
+}
+
+.pictogramContainerModalBuy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2vw auto;
+  width: 80%;
+}
+
+.pictogramContainerModalBuy .pictogramModalBuy {
+  padding: 1em;
+  border: 3px solid #55828b;
+  cursor: pointer;
+}
+
+.pictogramContainerModalBuy .pictogramModalBuy:hover {
+  border: 3px solid white;
+  border-radius: 15px;
+}
+
+.pictogramContainerModalBuy .pictogramModalBuy img {
+  width: 5vw;
+}
+
+.pictogramContainerModalBuy .pictogramModalBuy .descBuyPictogram div {
+  text-align: center;
+  font-size: 1.1vw;
+}
+
+.btnCenterContainer {
+  text-align: center;
+}
+
+.continentChooseModalBuy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2vh;
+}
+
+.continentChooseModalBuy h3 {
+  margin-right: 25%;
+}
+
+.continentChooseModalBuy .modalButtonLight {
+  text-transform: capitalize;
+}
+/*# sourceMappingURL=modal.css.map */
