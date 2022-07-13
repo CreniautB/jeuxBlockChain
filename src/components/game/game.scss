@@ -5,6 +5,7 @@
 }
 * {
   font-family: "Poppins", sans-serif;
+  animation: 1s all ease;
 }
 
 p,
@@ -63,16 +64,52 @@ button {
   }
   h1 {
     font-family: goodTime !important;
+    padding-top: 0.3em;
+    font-size: 7vh;
   }
 }
 .titleBottom {
   position: absolute;
   text-align: center;
-  bottom: 3%;
+  bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
   p {
     margin: auto;
+    font-size: 21px;
     font-weight: 500;
   }
+}
+.timer {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  .titleTimer {
+    margin-right: 0.5em;
+  }
+  p {
+    margin: 0 0.2em;
+  }
+}
+
+.activeBtn {
+  animation: activeBtn 1s ease;
+  background-color: $darkBLue;
+  box-shadow: none;
+}
+
+@keyframes activeBtn {
+  0% {
+    background-color: $lightBlue;
+    box-shadow: -0.3vw 0.2vw 0px 0.1vw $darkBLue;
+  }
+  100% {
+    background-color: $darkBLue;
+    box-shadow: none;
+  }
+}
+
+.simulateEndGame {
+  top: 50%;
+  position: absolute;
 }

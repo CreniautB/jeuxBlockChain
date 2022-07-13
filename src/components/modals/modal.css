@@ -10,8 +10,8 @@
 }
 
 .modal {
-  min-width: 55vw;
-  min-height: 55vh;
+  width: 55vw;
+  height: 60vh;
   position: absolute;
   background-color: #55828b;
   top: 50%;
@@ -23,6 +23,41 @@
   -webkit-box-shadow: -0.3vw 0.2vw 0px 0.1vw #364958;
           box-shadow: -0.3vw 0.2vw 0px 0.1vw #364958;
   z-index: 20;
+  -webkit-animation: onLoad 0.5s ease;
+          animation: onLoad 0.5s ease;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@-webkit-keyframes onLoad {
+  0% {
+    height: 0vw;
+    width: 0vw;
+  }
+  100% {
+    height: 60vh;
+    width: 55vw;
+  }
+}
+
+@keyframes onLoad {
+  0% {
+    height: 0vw;
+    width: 0vw;
+  }
+  100% {
+    height: 60vh;
+    width: 55vw;
+  }
 }
 
 .paragrapheScroll {
@@ -58,9 +93,11 @@
       justify-content: space-around;
 }
 
-.modalFactoryContainer h3 {
+.modalFactoryContainer h3,
+.modalFactoryContainer h4 {
   font-weight: 500;
   font-size: 1.5vw;
+  margin: 3vh 0;
 }
 
 .modalButtonDark {
@@ -82,12 +119,12 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 2vw auto;
+  margin: 0 auto;
   width: 80%;
 }
 
 .pictogramContainerModalBuy .pictogramModalBuy {
-  padding: 1em;
+  padding: 2vh;
   border: 3px solid #55828b;
   cursor: pointer;
 }
@@ -129,5 +166,85 @@
 
 .continentChooseModalBuy .modalButtonLight {
   text-transform: capitalize;
+}
+
+.endGameModal {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  z-index: 500;
+}
+
+.endGameModal .modalContentEndGame {
+  height: 60%;
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 2vw 4vw;
+  border-radius: 20px;
+  -webkit-box-shadow: -0.3vw 0.2vw 0px 0.1vw #364958;
+          box-shadow: -0.3vw 0.2vw 0px 0.1vw #364958;
+  background-color: #55828b;
+}
+
+.endGameModal .contentEndGame {
+  height: 80%;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.endGameModal h1 {
+  font-family: goodTime !important;
+  margin: 1.5em 0;
+}
+
+.endGameModal h2 {
+  font-weight: 600;
+}
+
+.chooseAContinent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1em;
+}
+
+.chooseAContinent h4 {
+  width: 40%;
+}
+
+.chooseAContinent .continentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: safe center;
+      -ms-flex-pack: safe center;
+          justify-content: safe center;
+  width: 50%;
+  margin: auto;
+}
+
+.chooseAContinent .continentContainer .modalButtonLight {
+  margin: 0.4em;
+}
+
+.modalFactoryContainer {
+  height: auto !important;
 }
 /*# sourceMappingURL=modal.css.map */

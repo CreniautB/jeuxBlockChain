@@ -11,8 +11,8 @@
 }
 
 .modal {
-  min-width: 55vw;
-  min-height: 55vh;
+  width: 55vw;
+  height: 60vh;
   position: absolute;
   background-color: $lightBlue;
   top: 50%;
@@ -22,7 +22,24 @@
   border-radius: 20px;
   box-shadow: -0.3vw 0.2vw 0px 0.1vw $darkBLue;
   z-index: 20;
+  animation: onLoad 0.5s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+@keyframes onLoad {
+  0% {
+    height: 0vw;
+    width: 0vw;
+  }
+  100% {
+    height: 60vh;
+    width: 55vw;
+  }
+}
+
 .paragrapheScroll {
   scroll-behavior: smooth;
   overflow-y: scroll;
@@ -48,9 +65,11 @@
     display: flex;
     justify-content: space-around;
   }
-  h3 {
+  h3,
+  h4 {
     font-weight: 500;
     font-size: 1.5vw;
+    margin: 3vh 0;
   }
 }
 
@@ -66,11 +85,11 @@
 .pictogramContainerModalBuy {
   display: flex;
   justify-content: space-between;
-  margin: 2vw auto;
+  margin: 0 auto;
   width: 80%;
 
   .pictogramModalBuy {
-    padding: 1em;
+    padding: 2vh;
     border: 3px solid $lightBlue;
     cursor: pointer;
     &:hover {
@@ -103,4 +122,66 @@
   .modalButtonLight {
     text-transform: capitalize;
   }
+}
+
+.endGameModal {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  backdrop-filter: blur(3px);
+  z-index: 500;
+
+  .modalContentEndGame {
+    height: 60%;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2vw 4vw;
+    border-radius: 20px;
+    box-shadow: -0.3vw 0.2vw 0px 0.1vw $darkBLue;
+    background-color: $lightBlue;
+  }
+  .contentEndGame {
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  h1 {
+    font-family: goodTime !important;
+    margin: 1.5em 0;
+  }
+  h2 {
+    font-weight: 600;
+  }
+}
+
+.chooseAContinent {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+  h4 {
+    width: 40%;
+  }
+  .continentContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: safe center;
+    width: 50%;
+    margin: auto;
+
+    .modalButtonLight {
+      margin: 0.4em;
+    }
+  }
+}
+
+.modalFactoryContainer {
+  height: auto !important;
 }

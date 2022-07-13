@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Timer from "./timer/timer";
 import Map from "../map/map";
 import "./game.css";
 
@@ -9,6 +10,7 @@ import closeCross from "../../assets/close.png";
 import ModalBuyToken from "../modals/modalBuyToken";
 import ModalAssoc from "../modals/modalAssoc";
 import ModalRule from "../modals/modalRule";
+import ModalEndGame from "../modals/modalEndGame";
 
 const Game = () => {
   const [modalBuyFactory, setModalBuyFactory] = useState(false);
@@ -17,36 +19,64 @@ const Game = () => {
   const [modalBuyToken, setModalBuyToken] = useState(false);
   const [modalAssoc, setModalAssoc] = useState(false);
   const [modalRule, setModalRule] = useState(false);
-
+  const [endGame, setEndGame] = useState(false);
   const [continentToBuy, setContinentToBuy] = useState("");
+
+  function openAModale(e, whichModal) {
+    whichModal(true);
+    e.target.classList.add("activeBtn");
+  }
+
+  function openModalBuyFactory(e) {
+    openAModale(e, setModalBuyFactory);
+    setContinentToBuy("all");
+  }
+
   return (
     <>
-      <button className="btnDarkBlue buyBtn" onClick={() => setModalBuy(true)}>
+      <button
+        className="btnDarkBlue simulateEndGame"
+        onClick={() => setEndGame(true)}
+      >
+        Simulate End Game
+      </button>
+      <button
+        className="btnDarkBlue buyBtn"
+        onClick={(e) => openModalBuyFactory(e)}
+      >
         Buy
       </button>
       <div className="logoutContainer">
-        <button className="btnDarkBlue" onClick={() => setModalBuyToken(true)}>
+        <button
+          className="btnDarkBlue buyTokenBtn "
+          onClick={(e) => openAModale(e, setModalBuyToken)}
+        >
           Buy Token
         </button>
-        <button className="btnDarkBlue" onClick={() => setModalLogOut(true)}>
+        <button
+          className="btnDarkBlue logOutBtn "
+          onClick={(e) => openAModale(e, setModalLogOut)}
+        >
           Log out
         </button>
       </div>
       <button
         className="btnDarkBlue ruleBtn"
-        onClick={() => setModalRule(true)}
+        onClick={(e) => openAModale(e, setModalRule)}
       >
         Rule
       </button>
       <button
         className="btnDarkBlue assocBtn"
-        onClick={() => setModalAssoc(true)}
+        onClick={(e) => openAModale(e, setModalAssoc)}
       >
         Association
       </button>
       <div className="mainTitle">
         <h1>TITLE</h1>
-        <p>Time until the end 00:10:00</p>
+        <div>
+          <Timer setEndGame={setEndGame} />
+        </div>
       </div>
       <div className="titleBottom">
         <p>Balance : 10 tokens</p>
@@ -54,7 +84,7 @@ const Game = () => {
           solar panel : 3 tokens/day <span></span>wind turbine : 4 tokens/day
         </p>
       </div>
-
+      {endGame ? <ModalEndGame /> : null}
       {modalBuy ? (
         <ModalBuy closeModal={setModalBuy} closeCross={closeCross} />
       ) : null}
@@ -76,6 +106,7 @@ const Game = () => {
           continentToBuy={continentToBuy}
           closeModal={setModalBuyFactory}
           closeCross={closeCross}
+          setContinentToBuy={setContinentToBuy}
         />
       ) : null}
       <Map
