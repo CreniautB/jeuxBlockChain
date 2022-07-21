@@ -65,4 +65,14 @@
   top: 65%;
   left: 83%;
 }
+
+.crown {
+  position: absolute;
+  top: -16%;
+  left: -20%;
+}
+
+.crown img {
+  width: 2.7vw;
+}
 /*# sourceMappingURL=infoFactory.css.map */

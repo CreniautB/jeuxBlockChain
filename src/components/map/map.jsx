@@ -8,20 +8,40 @@ const Map = ({ setContinentToBuy, setModalBuyFactory }) => {
     setModalBuyFactory(true);
   }
 
+  const [advantage, setAdvantage] = useState("asia");
+
   return (
     <div className="worldMap">
-      <InfoFactory continent="africa" handleClickToInfo={handleClickToInfo} />
-      <InfoFactory continent="asia" handleClickToInfo={handleClickToInfo} />
+      <InfoFactory
+        continent="africa"
+        handleClickToInfo={handleClickToInfo}
+        advantage={advantage}
+      />
+      <InfoFactory
+        continent="asia"
+        handleClickToInfo={handleClickToInfo}
+        advantage={advantage}
+      />
       <InfoFactory
         continent="southAmerica"
         handleClickToInfo={handleClickToInfo}
+        advantage={advantage}
       />
       <InfoFactory
         continent="northAmerica"
         handleClickToInfo={handleClickToInfo}
+        advantage={advantage}
       />
-      <InfoFactory continent="europe" handleClickToInfo={handleClickToInfo} />
-      <InfoFactory continent="oceania" handleClickToInfo={handleClickToInfo} />
+      <InfoFactory
+        continent="europe"
+        handleClickToInfo={handleClickToInfo}
+        advantage={advantage}
+      />
+      <InfoFactory
+        continent="oceania"
+        handleClickToInfo={handleClickToInfo}
+        advantage={advantage}
+      />
     </div>
   );
 };

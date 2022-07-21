@@ -123,15 +123,21 @@
   width: 80%;
 }
 
+.pictogramContainerModalBuy .activePower {
+  border: 3px solid white !important;
+  border-radius: 15px;
+}
+
 .pictogramContainerModalBuy .pictogramModalBuy {
   padding: 2vh;
   border: 3px solid #55828b;
   cursor: pointer;
+  z-index: 800;
 }
 
-.pictogramContainerModalBuy .pictogramModalBuy:hover {
-  border: 3px solid white;
-  border-radius: 15px;
+.pictogramContainerModalBuy .pictogramModalBuy * {
+  pointer-events: none;
+  z-index: 100;
 }
 
 .pictogramContainerModalBuy .pictogramModalBuy img {
@@ -158,6 +164,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 2vh;
+  width: 100%;
 }
 
 .continentChooseModalBuy h3 {
@@ -220,7 +227,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 1em;
+  margin-bottom: 2vh;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .chooseAContinent h4 {
@@ -236,15 +246,43 @@
   -webkit-box-pack: safe center;
       -ms-flex-pack: safe center;
           justify-content: safe center;
-  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: auto;
+  background-color: #c9e4ca;
+  -webkit-box-shadow: -0.3vw 0.2vw 0px 0.2vw #87bba2;
+          box-shadow: -0.3vw 0.2vw 0px 0.2vw #87bba2;
+  border-radius: 2px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.chooseAContinent .continentContainer .modalButtonLight {
-  margin: 0.4em;
+.chooseAContinent .continentContainer .continentToSelect {
+  display: none;
+}
+
+.chooseAContinent .continentContainer button {
+  background-color: #c9e4ca;
 }
 
 .modalFactoryContainer {
   height: auto !important;
+}
+
+.selectedRole {
+  background-color: #87bba2;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0.1em 0.4em;
+}
+
+.disableConfirmBtn {
+  pointer-events: none;
+  background-color: #364958;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 /*# sourceMappingURL=modal.css.map */

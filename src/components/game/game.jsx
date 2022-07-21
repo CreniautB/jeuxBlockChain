@@ -20,7 +20,7 @@ const Game = () => {
   const [modalAssoc, setModalAssoc] = useState(false);
   const [modalRule, setModalRule] = useState(false);
   const [endGame, setEndGame] = useState(false);
-  const [continentToBuy, setContinentToBuy] = useState("");
+  const [continentToBuy, setContinentToBuy] = useState();
 
   function openAModale(e, whichModal) {
     whichModal(true);

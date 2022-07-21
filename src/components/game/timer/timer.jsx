@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const Timer = ({ setEndGame }) => {
-  const endDate = new Date("2022-07-17T10:34:20");
+  const endDate = new Date("2022-09-17T10:34:20");
 
   const [days, setDays] = useState();
   const [hours, setHours] = useState();
@@ -38,6 +38,8 @@ const Timer = ({ setEndGame }) => {
   return (
     <div className="timer">
       <p className="titleTimer">Time until the end </p>
+      <p>{days}</p>
+      <p>:</p>
       <p>{hours}</p>
       <p>:</p>
       <p>{minutes}</p>

@@ -88,14 +88,20 @@
   margin: 0 auto;
   width: 80%;
 
+  .activePower {
+    border: 3px solid white !important;
+    border-radius: 15px;
+  }
   .pictogramModalBuy {
     padding: 2vh;
     border: 3px solid $lightBlue;
     cursor: pointer;
-    &:hover {
-      border: 3px solid white;
-      border-radius: 15px;
+    z-index: 800;
+    * {
+      pointer-events: none;
+      z-index: 100;
     }
+
     img {
       width: 5vw;
     }
@@ -116,6 +122,7 @@
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 2vh;
+  width: 100%;
   h3 {
     margin-right: 25%;
   }
@@ -165,7 +172,8 @@
 .chooseAContinent {
   display: flex;
   align-items: center;
-  margin-bottom: 1em;
+  margin-bottom: 2vh;
+  justify-content: flex-start;
   h4 {
     width: 40%;
   }
@@ -173,15 +181,33 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: safe center;
-    width: 50%;
+    flex-direction: column;
     margin: auto;
-
-    .modalButtonLight {
-      margin: 0.4em;
+    background-color: $lightGreen;
+    box-shadow: -0.3vw 0.2vw 0px 0.2vw $green;
+    border-radius: 2px;
+    align-items: center;
+    .continentToSelect {
+      display: none;
+    }
+    button {
+      background-color: $lightGreen;
     }
   }
 }
 
 .modalFactoryContainer {
   height: auto !important;
+}
+
+.selectedRole {
+  background-color: $green;
+  box-shadow: none;
+  padding: 0.1em 0.4em;
+}
+
+.disableConfirmBtn {
+  pointer-events: none;
+  background-color: $darkBLue;
+  box-shadow: none;
 }
