@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/jeuxBlockChain/static/css/main.abbf40f9.css",
-    "main.js": "/jeuxBlockChain/static/js/main.c7c6242c.js",
+    "main.css": "/jeuxBlockChain/static/css/main.971381fd.css",
+    "main.js": "/jeuxBlockChain/static/js/main.ab188cf2.js",
     "static/js/787.43319fd1.chunk.js": "/jeuxBlockChain/static/js/787.43319fd1.chunk.js",
     "static/media/map.png": "/jeuxBlockChain/static/media/map.f4cb508bd196ded43f6d.png",
     "static/media/fontGood.otf": "/jeuxBlockChain/static/media/fontGood.a86d4f7f5cdb8cf2e409.otf",
+    "static/media/en.png": "/jeuxBlockChain/static/media/en.b9a2ba74e5f8a55977e7.png",
+    "static/media/fr.png": "/jeuxBlockChain/static/media/fr.73f91b4e96d67f8a03f0.png",
+    "static/media/sp.png": "/jeuxBlockChain/static/media/sp.7ab20088ad372c62ab72.png",
     "static/media/logo.svg": "/jeuxBlockChain/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/jeuxBlockChain/index.html",
-    "main.abbf40f9.css.map": "/jeuxBlockChain/static/css/main.abbf40f9.css.map",
-    "main.c7c6242c.js.map": "/jeuxBlockChain/static/js/main.c7c6242c.js.map",
+    "main.971381fd.css.map": "/jeuxBlockChain/static/css/main.971381fd.css.map",
+    "main.ab188cf2.js.map": "/jeuxBlockChain/static/js/main.ab188cf2.js.map",
     "787.43319fd1.chunk.js.map": "/jeuxBlockChain/static/js/787.43319fd1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.abbf40f9.css",
-    "static/js/main.c7c6242c.js"
+    "static/css/main.971381fd.css",
+    "static/js/main.ab188cf2.js"
   ]
 }
