@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jeuxBlockChain/static/css/main.971381fd.css",
-    "main.js": "/jeuxBlockChain/static/js/main.aa2d8c1d.js",
+    "main.js": "/jeuxBlockChain/static/js/main.51b998b8.js",
     "static/js/787.43319fd1.chunk.js": "/jeuxBlockChain/static/js/787.43319fd1.chunk.js",
     "static/media/map.png": "/jeuxBlockChain/static/media/map.f4cb508bd196ded43f6d.png",
     "static/media/fontGood.otf": "/jeuxBlockChain/static/media/fontGood.a86d4f7f5cdb8cf2e409.otf",
@@ -10,11 +10,11 @@
     "static/media/sp.png": "/jeuxBlockChain/static/media/sp.7ab20088ad372c62ab72.png",
     "index.html": "/jeuxBlockChain/index.html",
     "main.971381fd.css.map": "/jeuxBlockChain/static/css/main.971381fd.css.map",
-    "main.aa2d8c1d.js.map": "/jeuxBlockChain/static/js/main.aa2d8c1d.js.map",
+    "main.51b998b8.js.map": "/jeuxBlockChain/static/js/main.51b998b8.js.map",
     "787.43319fd1.chunk.js.map": "/jeuxBlockChain/static/js/787.43319fd1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.971381fd.css",
-    "static/js/main.aa2d8c1d.js"
+    "static/js/main.51b998b8.js"
   ]
 }
