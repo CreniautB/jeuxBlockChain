@@ -21,6 +21,7 @@ const Game = () => {
   const [modalRule, setModalRule] = useState(false);
   const [endGame, setEndGame] = useState(false);
   const [continentToBuy, setContinentToBuy] = useState();
+  const [lang, setLang] = useState("en");
 
   function openAModale(e, whichModal) {
     whichModal(true);
@@ -74,6 +75,7 @@ const Game = () => {
       </button>
       <div className="mainTitle">
         <h1>TITLE</h1>
+
         <div>
           <Timer setEndGame={setEndGame} />
         </div>
@@ -95,10 +97,19 @@ const Game = () => {
         <ModalLogOut closeModal={setModalLogOut} closeCross={closeCross} />
       ) : null}
       {modalAssoc ? (
-        <ModalAssoc closeModal={setModalAssoc} closeCross={closeCross} />
+        <ModalAssoc
+          closeModal={setModalAssoc}
+          closeCross={closeCross}
+          lang={lang}
+        />
       ) : null}
       {modalRule ? (
-        <ModalRule closeModal={setModalRule} closeCross={closeCross} />
+        <ModalRule
+          closeModal={setModalRule}
+          closeCross={closeCross}
+          lang={lang}
+          setLang={setLang}
+        />
       ) : null}
 
       {modalBuyFactory ? (

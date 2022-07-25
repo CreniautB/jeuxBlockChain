@@ -285,4 +285,9 @@
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+
+.flagIcon {
+  margin: 0 0.5em;
+  cursor: pointer;
+}
 /*# sourceMappingURL=modal.css.map */

@@ -76,7 +76,7 @@ const ModalBuyFactory = ({
   return (
     <div className="modalFactoryContainer modal">
       <div className="exitModal" onClick={(e) => closerModal(e)}>
-        <img src={closeCross} alt="" />
+        <img src={closeCross} alt="cross for close the modal" />
       </div>
       <div className="modalFactoryHeader">
         <button
@@ -102,7 +102,7 @@ const ModalBuyFactory = ({
           onClick={(e) => clickOnPictogramBuy(e, "Gas")}
           data-power="Gas"
         >
-          <img src={pictogramGas}></img>
+          <img src={pictogramGas} alt="factory"></img>
           <div className="descBuyPictogram">
             <div>PRICE</div>
             <div>E</div>
@@ -114,7 +114,7 @@ const ModalBuyFactory = ({
           onClick={(e) => clickOnPictogramBuy(e, "Wind")}
           data-power="Wind"
         >
-          <img src={pictogramWind}></img>
+          <img src={pictogramWind} alt="wind turbine"></img>
           <div className="descBuyPictogram">
             <div>PRICE</div>
             <div>E</div>
@@ -126,7 +126,7 @@ const ModalBuyFactory = ({
           onClick={(e) => clickOnPictogramBuy(e, "Sun")}
           data-power="Sun"
         >
-          <img src={pictogramSun}></img>
+          <img src={pictogramSun} alt="solar panel"></img>
           <div className="descBuyPictogram">
             <div>PRICE</div>
             <div>E</div>

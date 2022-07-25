@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./map.css";
 import InfoFactory from "../infoFactory/infoFactory";
 
@@ -8,7 +8,12 @@ const Map = ({ setContinentToBuy, setModalBuyFactory }) => {
     setModalBuyFactory(true);
   }
 
-  const [advantage, setAdvantage] = useState("asia");
+  useEffect(() => {
+    // CALL FOR SET THE ADVANTAGE CONTINENT
+    setAdvantage("asia");
+  }, []);
+
+  const [advantage, setAdvantage] = useState("");
 
   return (
     <div className="worldMap">

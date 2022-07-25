@@ -9,7 +9,7 @@ const ModalLogOut = ({ closeModal, closeCross }) => {
   return (
     <div className="modal">
       <div className="exitModal" onClick={(e) => closerModal(e)}>
-        <img src={closeCross}></img>
+        <img src={closeCross} alt="cross for close the modal"></img>
         <h1>IN PROCCES</h1>
       </div>
     </div>
